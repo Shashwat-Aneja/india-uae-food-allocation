@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Node, build
+node_modules/
+dist/
+.build/
+
+# VSCode
+.vscode/
+
+# Figma exports
+*.png
+*.jpg
+
+# other
+*.log
