@@ -1,6 +1,5 @@
-# India ↔ UAE Foodgrain Allocation — Compact Concept (Option A)
-
-**One-line:** A design-first, logic-driven prototype that models how surplus foodgrain in India can be matched with the UAE's demand using decision logic, UI prototypes, and pricing simulations — no heavy coding required.
+# India ↔ UAE Foodgrain Allocation
+A design-first, logic-driven prototype that models how surplus foodgrain in India can be matched with the UAE's demand using decision logic, UI prototypes, and pricing simulations — no heavy coding required.
 
 ---
 
