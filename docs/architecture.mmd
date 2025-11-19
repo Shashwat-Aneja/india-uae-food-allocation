@@ -1,0 +1,20 @@
+flowchart TD
+  A[India Surplus Data] --> B(Input Normalize)
+  C[UAE Demand Data] --> B
+  B --> D{Decision Logic}
+  E[Logistics & Constraints] --> D
+  D --> F[Allocation Engine (Formulas)]
+  F --> G[Cost Estimator]
+  F --> H[UI Visualizer]
+  G --> H
+  H --> I[Report & Export]
+
+
+flowchart TD
+  Start([Start]) --> CheckSurplus{Surplus > Threshold?}
+  CheckSurplus -- Yes --> CheckDemand{DemandUrgency > 0.7?}
+  CheckSurplus -- No --> Store[Recommend Local Storage]
+  CheckDemand -- Yes --> RouteOpt[Run Route Optimization]
+  CheckDemand -- No --> Combined[Combine with other demands]
+  RouteOpt --> Allocate[Allocate & Generate Cost]
+  Allocate --> End([End])
