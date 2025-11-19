@@ -23,30 +23,18 @@ india-uae-food-allocation/
 │ └── formulas.md
 ├── assets/
 │ ├── images/
-│ │ ├── dashboard_minimal.png # (UI image you exported)
-│ │ └── architecture.png # (system flow image)
-├── prototypes/
-│ ├── figma-link.txt
-│ └── low-fi-wireframes.png
+│ │ └── dashboard.jpg
 ├── assets/sample-data.csv
 ├── article/
 │ ├── linkedin-article.md
-│ └── linkedin-short.md
+│
 └── CONTRIBUTING.md
-
-
-
-> **Notes:** Add your exported dashboard image at `assets/images/dashboard_minimal.png`. Add the architecture image (generated earlier) at `assets/images/architecture.png`.
 
 ---
 
 ## 🖼️ Visuals
 
-**Dashboard** (open `assets/images/dashboard_minimal.png`) — the presentation-ready UI for stakeholders.
-
-**Architecture diagram** (open `assets/images/architecture.png`) — system flow showing Inputs → Allocation Engine → Cost Estimator → Outputs.
-
----
+**Dashboard** (open `assets/images/dashboard.jpg`) — the presentation-ready UI for stakeholders.
 
 ## 🧠 Decision Logic (summary)
 
