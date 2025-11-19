@@ -1,0 +1,10 @@
+region,crop,month,available_tonnes,base_price_per_tonne,port
+Punjab,Wheat,Jan,1200,18000,Mumbai
+Punjab,Wheat,Feb,1500,18000,Mumbai
+Maharashtra,Rice,Mar,1700,22000,Mundra
+Bihar,Wheat,Apr,1600,17500,Kolkata
+AndhraPradesh,Rice,May,1800,22000,Visakhapatnam
+Gujarat,Wheat,Jun,2000,17800,Mundra
+
+
+Note: prices are per tonne in INR — adjust as needed.
