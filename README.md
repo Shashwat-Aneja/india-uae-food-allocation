@@ -33,3 +33,79 @@ india-uae-food-allocation/
 │ ├── linkedin-article.md
 │ └── linkedin-short.md
 └── CONTRIBUTING.md
+
+
+
+> **Notes:** Add your exported dashboard image at `assets/images/dashboard_minimal.png`. Add the architecture image (generated earlier) at `assets/images/architecture.png`.
+
+---
+
+## 🖼️ Visuals
+
+**Dashboard** (open `assets/images/dashboard_minimal.png`) — the presentation-ready UI for stakeholders.
+
+**Architecture diagram** (open `assets/images/architecture.png`) — system flow showing Inputs → Allocation Engine → Cost Estimator → Outputs.
+
+---
+
+## 🧠 Decision Logic (summary)
+
+The system is intentionally logic-based (no heavy code): an allocation engine ranks surplus regions and candidate shipments using a weighted allocation score and selects the cheapest feasible routes until demand is met.
+
+**Allocation Score (high-level)**  
+`AllocScore = w1*(Surplus/TotalSurplus) + w2*DemandUrgency - w3*(TransitPenalty/MaxPenalty)`
+
+Weights (w1,w2,w3) are tunable.  
+Landing cost per tonne is computed as:
+
+`LandingCost = P_ind + T_trans + S_storage + I_insurance + H_handling + Tariffs + Margin`
+
+See `docs/formulas.md` for full formulas.
+
+---
+
+## 📊 Sample Data
+
+Sample placeholder CSV is included (`assets/sample-data.csv`) to illustrate expected columns and content. Replace with real numbers to run numeric simulations.
+
+---
+
+## 📄 Documentation
+
+- `docs/architecture.mmd` — mermaid diagrams for architecture and decision flow (renderable on GitHub).
+- `docs/formulas.md` — pricing formulas and allocation selection rules.
+
+---
+
+## 🧭 How to use this repo (quick)
+
+1. Replace `assets/sample-data.csv` with your data.  
+2. Open `README.md` to view visuals and the mermaid diagrams.  
+3. Use the formulas in `docs/formulas.md` to calculate landing costs and allocation scores offline (spreadsheet).  
+4. Publish the repo, then add the LinkedIn article in `article/` and post it.
+
+---
+
+## 📣 LinkedIn & Sharing
+
+A ready LinkedIn article and short announcement are included in `article/`. Use them as-is or customize for voice and contact links.
+
+---
+
+## 🛠️ Future work & Next steps
+
+- Add a spreadsheet prototype implementing formulas.
+- Add a small interactive prototype (e.g., Google Sheets with formulas or a non-production web demo).
+- Add country-specific customs & phytosanitary constraints.
+- Prepare a one-page PDF brief for stakeholders.
+
+---
+
+## 👥 Credits
+
+Project by: *[Your Name]*  
+Mentor / co-partner: *Shashwat Aneja* (design & prototyping guidance)
+
+---
+
+If you want, I will generate the exact `docs/formulas.md`, the mermaid diagram file, the sample CSV, `CONTRIBUTING.md`, and the LinkedIn article now — just say **“Generate files now”** and I will paste each file content for you to create locally.
